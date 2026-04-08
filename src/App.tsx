@@ -752,3 +752,8 @@ export default function App() {
     </div>
   )
 }
+export const useAuth = () => {
+  return {
+    user: null
+  }
+}
