@@ -6,7 +6,7 @@ import {
   Sparkles, Brain, Pill, AlertTriangle, Stethoscope, Volume2, VolumeX,
   ArrowRight, Zap, Shield, Heart, FileText
 } from 'lucide-react';
-import { useAuth } from '../App';
+
 
 // AI Response Card Types
 interface AICard {
@@ -20,7 +20,7 @@ interface AICard {
 
 export default function Dashboard() {
   const navigate = useNavigate();
-  const { user } = useAuth();
+const user = null;
   const [query, setQuery] = useState('');
   const [isListening, setIsListening] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
