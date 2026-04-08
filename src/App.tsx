@@ -754,6 +754,13 @@ export default function App() {
 }
 export const useAuth = () => {
   return {
-    user: null
+    user: {
+      email: "test@gmail.com",
+      username: "demo"
+    },
+    login: () => {},
+    signup: () => {},
+    logout: () => {},
+    loginWithGoogle: () => {}
   }
 }
